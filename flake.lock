@@ -1,0 +1,257 @@
+{
+  "nodes": {
+    "dng_sdk": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1552452980,
+        "narHash": "sha256-lTtvBUGaia0jhrxpw7k7NIq2SVyGmBJPCvjIqAQCmNo=",
+        "rev": "c8d0c9b1d16bfda56f15165d39e0ffa360a11123",
+        "revCount": 168,
+        "type": "git",
+        "url": "https://android.googlesource.com/platform/external/dng_sdk.git"
+      },
+      "original": {
+        "rev": "c8d0c9b1d16bfda56f15165d39e0ffa360a11123",
+        "type": "git",
+        "url": "https://android.googlesource.com/platform/external/dng_sdk.git"
+      }
+    },
+    "expat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1667590191,
+        "narHash": "sha256-FXTDGAK03jc2wvazhRKqtsFRKZUYS/9HLpZNp4JfZJI=",
+        "owner": "libexpat",
+        "repo": "libexpat",
+        "rev": "441f98d02deafd9b090aea568282b28f66a50e36",
+        "type": "github"
+      },
+      "original": {
+        "owner": "libexpat",
+        "repo": "libexpat",
+        "rev": "441f98d02deafd9b090aea568282b28f66a50e36",
+        "type": "github"
+      }
+    },
+    "freetype": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1693894171,
+        "narHash": "sha256-RRieGqEeAk5AYzJqPRpF25FmxMpEYwR7AQWLzXkED50=",
+        "rev": "45903920b984540bb629bc89f4c010159c23a89a",
+        "revCount": 7891,
+        "type": "git",
+        "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2.git"
+      },
+      "original": {
+        "rev": "45903920b984540bb629bc89f4c010159c23a89a",
+        "type": "git",
+        "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2.git"
+      }
+    },
+    "gzip-hpp": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1606848607,
+        "narHash": "sha256-NTjighgmHJ5eV/4D6puSK6vcRttNasAjwbzW9kTdAjI=",
+        "owner": "mapbox",
+        "repo": "gzip-hpp",
+        "rev": "7546b35aba5917154a0e9ae43f804b57d22bb966",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mapbox",
+        "repo": "gzip-hpp",
+        "type": "github"
+      }
+    },
+    "harfbuzz": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1693511382,
+        "narHash": "sha256-rrstyAz7Eb8ZgFJZKUASY8nU4YFZAptd5VS9B2cs2Yg=",
+        "owner": "harfbuzz",
+        "repo": "harfbuzz",
+        "rev": "4cfc6d8e173e800df086d7be078da2e8c5cfca19",
+        "type": "github"
+      },
+      "original": {
+        "owner": "harfbuzz",
+        "repo": "harfbuzz",
+        "rev": "4cfc6d8e173e800df086d7be078da2e8c5cfca19",
+        "type": "github"
+      }
+    },
+    "icu": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1622657521,
+        "narHash": "sha256-BI3f/gf9GNDvSfXWeRHKBvznSz4mjXY8rM24kK7QvOM=",
+        "rev": "a0718d4f121727e30b8d52c7a189ebf5ab52421f",
+        "revCount": 351,
+        "type": "git",
+        "url": "https://chromium.googlesource.com/chromium/deps/icu.git"
+      },
+      "original": {
+        "rev": "a0718d4f121727e30b8d52c7a189ebf5ab52421f",
+        "type": "git",
+        "url": "https://chromium.googlesource.com/chromium/deps/icu.git"
+      }
+    },
+    "libjpeg-turbo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662039127,
+        "narHash": "sha256-DYJP3phe4OzCtRN2pMc07ITTWR8MuIlOWWg9PBsQAVw=",
+        "ref": "main",
+        "rev": "ed683925e4897a84b3bffc5c1414c85b97a129a3",
+        "revCount": 176,
+        "type": "git",
+        "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo.git"
+      },
+      "original": {
+        "ref": "main",
+        "rev": "ed683925e4897a84b3bffc5c1414c85b97a129a3",
+        "type": "git",
+        "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo.git"
+      }
+    },
+    "libpng": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1556164634,
+        "narHash": "sha256-67kf5MBsnBBi0bOfX/RKL52xpaCWm/ampltAI+EeQ+c=",
+        "rev": "386707c6d19b974ca2e3db7f5c61873813c6fe44",
+        "revCount": 4068,
+        "type": "git",
+        "url": "https://skia.googlesource.com/third_party/libpng.git"
+      },
+      "original": {
+        "rev": "386707c6d19b974ca2e3db7f5c61873813c6fe44",
+        "type": "git",
+        "url": "https://skia.googlesource.com/third_party/libpng.git"
+      }
+    },
+    "libwebp": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1694124879,
+        "narHash": "sha256-z6Um0kF5hPt1VOoJCLvZfIQNx8irFaJOPA5yOY9zeLc=",
+        "ref": "1.3.1",
+        "rev": "2af26267cdfcb63a88e5c74a85927a12d6ca1d76",
+        "revCount": 4624,
+        "type": "git",
+        "url": "https://chromium.googlesource.com/webm/libwebp.git"
+      },
+      "original": {
+        "ref": "1.3.1",
+        "rev": "2af26267cdfcb63a88e5c74a85927a12d6ca1d76",
+        "type": "git",
+        "url": "https://chromium.googlesource.com/webm/libwebp.git"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1694499547,
+        "narHash": "sha256-R7xMz1Iia6JthWRHDn36s/E248WB1/je62ovC/dUVKI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e5f018cf150e29aac26c61dac0790ea023c46b24",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "release-23.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "piex": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1520630939,
+        "narHash": "sha256-IhAfxlu0UmllihBP9wbg7idT8azlbb9arLKUaZ6qNxY=",
+        "rev": "bb217acdca1cc0c16b704669dd6f91a1b509c406",
+        "revCount": 87,
+        "type": "git",
+        "url": "https://android.googlesource.com/platform/external/piex.git"
+      },
+      "original": {
+        "rev": "bb217acdca1cc0c16b704669dd6f91a1b509c406",
+        "type": "git",
+        "url": "https://android.googlesource.com/platform/external/piex.git"
+      }
+    },
+    "root": {
+      "inputs": {
+        "dng_sdk": "dng_sdk",
+        "expat": "expat",
+        "freetype": "freetype",
+        "gzip-hpp": "gzip-hpp",
+        "harfbuzz": "harfbuzz",
+        "icu": "icu",
+        "libjpeg-turbo": "libjpeg-turbo",
+        "libpng": "libpng",
+        "libwebp": "libwebp",
+        "nixpkgs": "nixpkgs",
+        "piex": "piex",
+        "sfntly": "sfntly",
+        "wuffs": "wuffs",
+        "zlib": "zlib"
+      }
+    },
+    "sfntly": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541518739,
+        "narHash": "sha256-/zp1MsR31HehoC5OAI4RO8QBlm7mldQNiTI7Xr/LJeI=",
+        "owner": "googlei18n",
+        "repo": "sfntly",
+        "rev": "b55ff303ea2f9e26702b514cf6a3196a2e3e2974",
+        "type": "github"
+      },
+      "original": {
+        "owner": "googlei18n",
+        "repo": "sfntly",
+        "rev": "b55ff303ea2f9e26702b514cf6a3196a2e3e2974",
+        "type": "github"
+      }
+    },
+    "wuffs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1680929928,
+        "narHash": "sha256-373d2F/STcgCHEq+PO+SCHrKVOo6uO1rqqwRN5eeBCw=",
+        "ref": "main",
+        "rev": "e3f919ccfe3ef542cfc983a82146070258fb57f8",
+        "revCount": 30,
+        "type": "git",
+        "url": "https://skia.googlesource.com/external/github.com/google/wuffs-mirror-release-c.git"
+      },
+      "original": {
+        "ref": "main",
+        "rev": "e3f919ccfe3ef542cfc983a82146070258fb57f8",
+        "type": "git",
+        "url": "https://skia.googlesource.com/external/github.com/google/wuffs-mirror-release-c.git"
+      }
+    },
+    "zlib": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611966639,
+        "narHash": "sha256-mwozVo8ymyrYN4tw+/ZnSI+xogSTZQ6PUBba/jQqRkE=",
+        "rev": "c876c8f87101c5a75f6014b0f832499afeb65b73",
+        "revCount": 387,
+        "type": "git",
+        "url": "https://chromium.googlesource.com/chromium/src/third_party/zlib"
+      },
+      "original": {
+        "rev": "c876c8f87101c5a75f6014b0f832499afeb65b73",
+        "type": "git",
+        "url": "https://chromium.googlesource.com/chromium/src/third_party/zlib"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

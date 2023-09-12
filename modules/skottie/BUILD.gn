@@ -111,11 +111,14 @@ if (skia_enable_skottie) {
         configs = [ "../..:skia_private" ]
         sources = [ "src/SkottieTool.cpp" ]
 
+        include_dirs = [ "../../third_party/externals/gzip/include" ]
+
         deps = [
           "../..:flags",
           "../..:gpu_tool_utils",
           "../..:skia",
           "../../experimental/ffmpeg:video_encoder",
+          "//third_party/zlib",
         ]
 
         public_deps = [
