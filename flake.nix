@@ -2,7 +2,7 @@
   description = "Skia flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-23.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/release-23.11";
 
     # Build deps
     icu = {
