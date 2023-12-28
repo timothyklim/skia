@@ -5,11 +5,12 @@ with lib;
 mkShell {
   name = "skia-env";
 
-  nativeBuildInputs = [ python2 gn ninja ];
+  nativeBuildInputs = [ python3 gn ninja ];
 
   # buildInputs = [ skottie_tool ];
-  buildInputs = [ fontconfig libglvnd mesa xorg.libX11 ]
-    ++ optionals stdenv.isDarwin (with darwin.apple_sdk.frameworks; [ AppKit ApplicationServices OpenGL ]);
+  buildInputs = [ fontconfig libglvnd ]
+    ++ optionals stdenv.isLinux [ libGLU mesa xorg.libX11 ]
+    ++ optionals stdenv.isDarwin (with darwin.apple_sdk.frameworks; [ darwin.cctools xcbuild.xcrun AppKit ApplicationServices OpenGL ]);
 
   shellHook = ''
     rm -rf third_party/externals

@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/release-23.11";
+    flake-utils.url = "github:numtide/flake-utils";
 
     # Build deps
     icu = {
@@ -59,9 +60,9 @@
     };
   };
 
-  outputs = { self, nixpkgs, dng_sdk, expat, harfbuzz, freetype, icu, libjpeg-turbo, libpng, libwebp, piex, sfntly, wuffs, zlib, gzip-hpp }:
+  outputs = { self, nixpkgs, flake-utils, dng_sdk, expat, harfbuzz, freetype, icu, libjpeg-turbo, libpng, libwebp, piex, sfntly, wuffs, zlib, gzip-hpp }:
+    with flake-utils.lib; eachSystem [ system.x86_64-linux system.aarch64-linux system.aarch64-darwin ] (system:
     let
-      system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
       skottie_tool = import ./build.nix {
         inherit pkgs dng_sdk expat harfbuzz freetype icu libjpeg-turbo libpng libwebp piex sfntly wuffs zlib gzip-hpp;
@@ -69,15 +70,15 @@
       derivation = { inherit skottie_tool; };
     in
     rec {
-      packages.${system} = derivation // { default = skottie_tool; };
-      legacyPackages.${system} = pkgs.extend overlays.default;
-      devShells.${system}.default = pkgs.callPackage ./shell.nix {
+      packages = derivation // { default = skottie_tool; };
+      legacyPackages = pkgs.extend overlays.default;
+      devShell = pkgs.callPackage ./shell.nix {
         inherit pkgs dng_sdk expat harfbuzz freetype icu libjpeg-turbo libpng libwebp piex sfntly wuffs zlib gzip-hpp skottie_tool;
       };
-      nixosModules.default = {
-        nixpkgs.overlays = [ overlays.default ];
+      nixosModule = {
+        nixpkgs.overlays = [ overlay ];
       };
-      overlays.default = final: prev: derivation;
-      formatter.${system} = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
-    };
+      overlay = final: prev: derivation;
+      formatter = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
+    });
 }

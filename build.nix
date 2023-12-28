@@ -8,7 +8,9 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [ python3 gn ninja ];
 
-  buildInputs = [ fontconfig libglvnd mesa xorg.libX11 libGLU ];
+  buildInputs = [ fontconfig libglvnd ]
+    ++ optionals stdenv.isLinux [ libGLU mesa xorg.libX11 ]
+    ++ optionals stdenv.isDarwin (with darwin.apple_sdk.frameworks; [ darwin.cctools xcbuild.xcrun AppKit ApplicationServices OpenGL ]);
 
   preConfigure = ''
     mkdir -p third_party/externals

@@ -151,7 +151,7 @@ config("default") {
 
   if (current_cpu == "arm") {
     cflags += [
-      "-march=armv7-a",
+      "-march=native",
       "-mfpu=neon",
       "-mthumb",
     ]
@@ -297,15 +297,15 @@ config("default") {
     } else {
       asmflags += [
         "-target",
-        "x86_64-apple-macos10.13",
+        "x86_64-apple-macos11.0",
       ]
       cflags += [
         "-target",
-        "x86_64-apple-macos10.13",
+        "x86_64-apple-macos11.0",
       ]
       ldflags += [
         "-target",
-        "x86_64-apple-macos10.13",
+        "x86_64-apple-macos11.0",
       ]
     }
   }
