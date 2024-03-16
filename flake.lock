@@ -38,11 +38,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1701680307,
-        "narHash": "sha256-kAuep2h5ajznlPMD9rnQyffWG8EM/C73lejGofXvdM8=",
+        "lastModified": 1710146030,
+        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "4022d587cbbfd70fe950c1e2083a02621806a725",
+        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
         "type": "github"
       },
       "original": {
@@ -155,14 +155,14 @@
       "locked": {
         "lastModified": 1694124879,
         "narHash": "sha256-z6Um0kF5hPt1VOoJCLvZfIQNx8irFaJOPA5yOY9zeLc=",
-        "ref": "1.3.1",
+        "ref": "1.3.2",
         "rev": "2af26267cdfcb63a88e5c74a85927a12d6ca1d76",
         "revCount": 4624,
         "type": "git",
         "url": "https://chromium.googlesource.com/webm/libwebp.git"
       },
       "original": {
-        "ref": "1.3.1",
+        "ref": "1.3.2",
         "rev": "2af26267cdfcb63a88e5c74a85927a12d6ca1d76",
         "type": "git",
         "url": "https://chromium.googlesource.com/webm/libwebp.git"
@@ -170,11 +170,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1701568801,
-        "narHash": "sha256-ozYK+iSGYxvTN9Lmxo0F1wwXO9OsSllaaYqxmcP462M=",
+        "lastModified": 1710599369,
+        "narHash": "sha256-IOwY3a5gvbV9ErQAnBkGXDiApDdwZyipqW+TNgTho34=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "9e2deb0ca243442f4534600108706f062ad0a3e6",
+        "rev": "76df88bc31a4c70680770554c1e5267a8eb363da",
         "type": "github"
       },
       "original": {

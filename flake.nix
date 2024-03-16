@@ -35,7 +35,7 @@
       flake = false;
     };
     libwebp = {
-      url = "git+https://chromium.googlesource.com/webm/libwebp.git?rev=2af26267cdfcb63a88e5c74a85927a12d6ca1d76&ref=1.3.1";
+      url = "git+https://chromium.googlesource.com/webm/libwebp.git?rev=2af26267cdfcb63a88e5c74a85927a12d6ca1d76&ref=1.3.2";
       flake = false;
     };
     harfbuzz = {
