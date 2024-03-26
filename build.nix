@@ -2,6 +2,11 @@
 
 with pkgs;
 with lib;
+
+let
+  apple_sdk = darwin.apple_sdk_11_0;
+  stdenv = if pkgs.stdenv.isDarwin then apple_sdk.stdenv else pkgs.stdenv;
+in
 stdenv.mkDerivation {
   name = "skottie_tool";
   src = builtins.path { path = ./.; };
@@ -10,7 +15,7 @@ stdenv.mkDerivation {
 
   buildInputs = [ fontconfig libglvnd ]
     ++ optionals stdenv.isLinux [ libGLU mesa xorg.libX11 ]
-    ++ optionals stdenv.isDarwin (with darwin.apple_sdk.frameworks; [ darwin.cctools xcbuild.xcrun AppKit ApplicationServices OpenGL ]);
+    ++ optionals stdenv.isDarwin (with apple_sdk.frameworks; [ darwin.cctools xcbuild.xcrun AppKit ApplicationServices OpenGL ]);
 
   preConfigure = ''
     mkdir -p third_party/externals

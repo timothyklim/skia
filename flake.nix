@@ -61,24 +61,24 @@
   };
 
   outputs = { self, nixpkgs, flake-utils, dng_sdk, expat, harfbuzz, freetype, icu, libjpeg-turbo, libpng, libwebp, piex, sfntly, wuffs, zlib, gzip-hpp }:
-    with flake-utils.lib; eachSystem [ system.x86_64-linux system.aarch64-linux system.aarch64-darwin ] (system:
-    let
-      pkgs = nixpkgs.legacyPackages.${system};
-      skottie_tool = import ./build.nix {
-        inherit pkgs dng_sdk expat harfbuzz freetype icu libjpeg-turbo libpng libwebp piex sfntly wuffs zlib gzip-hpp;
-      };
-      derivation = { inherit skottie_tool; };
-    in
-    rec {
-      packages = derivation // { default = skottie_tool; };
-      legacyPackages = pkgs.extend overlays.default;
-      devShell = pkgs.callPackage ./shell.nix {
-        inherit pkgs dng_sdk expat harfbuzz freetype icu libjpeg-turbo libpng libwebp piex sfntly wuffs zlib gzip-hpp skottie_tool;
-      };
-      nixosModule = {
-        nixpkgs.overlays = [ overlay ];
-      };
-      overlay = final: prev: derivation;
-      formatter = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
-    });
+    with flake-utils.lib; with system; eachSystem [ x86_64-linux aarch64-linux aarch64-darwin x86_64-darwin ] (system:
+      let
+        pkgs = nixpkgs.legacyPackages.${system};
+        skottie_tool = pkgs.callPackage ./build.nix {
+          inherit pkgs dng_sdk expat harfbuzz freetype icu libjpeg-turbo libpng libwebp piex sfntly wuffs zlib gzip-hpp;
+        };
+        derivation = { inherit skottie_tool; };
+      in
+      rec {
+        packages = derivation // { default = skottie_tool; };
+        legacyPackages = pkgs.extend overlays.default;
+        devShell = pkgs.callPackage ./shell.nix {
+          inherit pkgs dng_sdk expat harfbuzz freetype icu libjpeg-turbo libpng libwebp piex sfntly wuffs zlib gzip-hpp skottie_tool;
+        };
+        nixosModule = {
+          nixpkgs.overlays = [ overlay ];
+        };
+        overlay = final: prev: derivation;
+        formatter = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
+      });
 }
