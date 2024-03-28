@@ -153,28 +153,27 @@
     "libwebp": {
       "flake": false,
       "locked": {
-        "lastModified": 1694124879,
-        "narHash": "sha256-z6Um0kF5hPt1VOoJCLvZfIQNx8irFaJOPA5yOY9zeLc=",
+        "lastModified": 1696897394,
+        "narHash": "sha256-C1aQcYvgzYE9y4SrqJdiCA0JUxG/Ei6u7NjMrzazE7A=",
         "ref": "1.3.2",
-        "rev": "2af26267cdfcb63a88e5c74a85927a12d6ca1d76",
-        "revCount": 4624,
+        "rev": "233960a0ad8c640acd458a6966dea09e12c1325a",
+        "revCount": 4628,
         "type": "git",
         "url": "https://chromium.googlesource.com/webm/libwebp.git"
       },
       "original": {
         "ref": "1.3.2",
-        "rev": "2af26267cdfcb63a88e5c74a85927a12d6ca1d76",
         "type": "git",
         "url": "https://chromium.googlesource.com/webm/libwebp.git"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1710599369,
-        "narHash": "sha256-IOwY3a5gvbV9ErQAnBkGXDiApDdwZyipqW+TNgTho34=",
+        "lastModified": 1711584535,
+        "narHash": "sha256-mERemVIYRjiSyzGKQ6tzKqeeTP5lUN2kHDMczl3Y64M=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "76df88bc31a4c70680770554c1e5267a8eb363da",
+        "rev": "d54cffecb8f9695ef79274a0417a352db8c27b6d",
         "type": "github"
       },
       "original": {
