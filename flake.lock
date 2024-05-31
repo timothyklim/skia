@@ -157,11 +157,11 @@
     "libwebp": {
       "flake": false,
       "locked": {
-        "lastModified": 1694124879,
-        "narHash": "sha256-79peh0y3eeiW5cVQqVq0mUgDcGZ9BlY+OXkPZylKARY=",
-        "ref": "1.3.1",
-        "rev": "2af26267cdfcb63a88e5c74a85927a12d6ca1d76",
-        "revCount": 4624,
+        "lastModified": 1696897394,
+        "narHash": "sha256-hCc4TXd0TZqT3B9aLFn2sTiW2cDA+O2mz07ajaSElps=",
+        "ref": "1.3.2",
+        "rev": "233960a0ad8c640acd458a6966dea09e12c1325a",
+        "revCount": 4628,
         "type": "git",
         "url": "https://chromium.googlesource.com/webm/libwebp.git"
       },
@@ -173,16 +173,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1716941067,
-        "narHash": "sha256-LpHP82S/4xE/mCUPoOulyS1xC/JJ5Wy/dOzn1VG5DkA=",
+        "lastModified": 1717090882,
+        "narHash": "sha256-Up5tvtY9YlVEyVn9hfZcxFQi5qVhQ5hdVNGPQOUchNw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "0ff3d75bf8c57034fac143e01b9607364c508f71",
+        "rev": "d24e7fdcfaecdca496ddd426cae98c9e2d12dfe8",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "release-24.05",
+        "ref": "nixos-24.05",
         "repo": "nixpkgs",
         "type": "github"
       }
