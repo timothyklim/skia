@@ -35,7 +35,7 @@
       flake = false;
     };
     libwebp = {
-      url = "git+https://chromium.googlesource.com/webm/libwebp.git?ref=1.3.2";
+      url = "https://github.com/webmproject/libwebp/archive/refs/tags/v1.3.2.tar.gz";
       flake = false;
     };
     harfbuzz = {

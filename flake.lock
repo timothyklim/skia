@@ -157,18 +157,14 @@
     "libwebp": {
       "flake": false,
       "locked": {
-        "lastModified": 1696897394,
-        "narHash": "sha256-hCc4TXd0TZqT3B9aLFn2sTiW2cDA+O2mz07ajaSElps=",
-        "ref": "1.3.2",
-        "rev": "233960a0ad8c640acd458a6966dea09e12c1325a",
-        "revCount": 4628,
-        "type": "git",
-        "url": "https://chromium.googlesource.com/webm/libwebp.git"
+        "lastModified": 1694643067,
+        "narHash": "sha256-UYO2Fmm8nzQR8VBC26wEwWd3qZTD+6MHKcmKBoNcpEE=",
+        "type": "tarball",
+        "url": "https://github.com/webmproject/libwebp/archive/refs/tags/v1.3.2.tar.gz"
       },
       "original": {
-        "ref": "1.3.2",
-        "type": "git",
-        "url": "https://chromium.googlesource.com/webm/libwebp.git"
+        "type": "tarball",
+        "url": "https://github.com/webmproject/libwebp/archive/refs/tags/v1.3.2.tar.gz"
       }
     },
     "nixpkgs": {
